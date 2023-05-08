@@ -23,32 +23,33 @@ require_once('../init.php');
     <label for="type">Type:</label>
     <select id="type" name="type" onchange="changeActionForm()">
       <option value="">Select a type</option>
-      <option value="book">Book</option>
-      <option value="dvd">DVD</option>
-      <option value="furniture">Furniture</option>
+      <option value="3">Book</option>
+      <option value="1">DVD</option>
+      <option value="2">Furniture</option>
     </select>
 
   
     <div id="book-fields" class="hidden">
-      <label for="weight">Weight:</label>
-      <input type="number" id="weight" name="weight">
-    </div>
-  
-    <div id="dvd-fields" class="hidden">
-      <label for="size">Size:</label>
-      <input type="text" id="size" name="size">
-    </div>
-  
-    <div id="furniture-fields" class="hidden">
-        <label for="height">Height:</label>
-        <input type="number" id="height" name="height">
-  
-      <label for="width">width:</label>
-      <input type="number" id="width" name="width">
+  <label for="weight">Weight:</label>
+  <input type="number" id="weight" name="weight">
+</div>
 
-      <label for="length">Length:</label>
-      <input type="number" id="length" name="length">
-    </div>
+<div id="dvd-fields" class="hidden">
+  <label for="size">Size:</label>
+  <input type="text" id="size" name="size">
+</div>
+
+<div id="furniture-fields" class="hidden">
+    <label for="height">Height:</label>
+    <input type="number" id="height" name="height">
+
+  <label for="width">width:</label>
+  <input type="number" id="width" name="width">
+
+  <label for="length">Length:</label>
+  <input type="number" id="length" name="length">
+</div>
+
   
     <button type="submit">Submit</button>
   </form>
