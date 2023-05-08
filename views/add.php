@@ -8,6 +8,9 @@ require_once('../init.php');
     <meta charset="UTF-8">
     <title>My Page</title>
     <link rel="stylesheet" href="../assets/CSS/bootstrap.min.css">
+        <!-- jQuery library (required by Bootstrap) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="../assets/JS/index.js"></script>
 </head>
 
 <form id="myForm" method="post">
@@ -55,9 +58,6 @@ require_once('../init.php');
   </form>
 
 <footer>
-    <!-- jQuery library (required by Bootstrap) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <!-- Bootstrap JavaScript file -->
     <script src="../assets/JS/bootstrap.min.js"></script>
-    <script src="../assets/JS/index.js"></script>
 </footer>
