@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $sku = isset($_POST['sku']) ? $_POST['sku'] : '';
     $name = isset($_POST['name']) ? $_POST['name'] : '';
     $price = isset($_POST['price']) ? $_POST['price'] : '';
-    $product_type_id = isset($_POST['type']) ? $_POST['type'] : '';
+    $product_type_id = isset($_POST['type']) ? (int)$_POST['type'] : 0;
     $weight = isset($_POST['weight']) ? $_POST['weight'] : '';
 
     // Create new Book instance
@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     var_dump($sku, $name, $price, $product_type_id);
 
     // Insert data into database
-    $sql = "INSERT INTO product (sku, name, price, product_type_id) VALUES ('$sku', '$name', '$price', '$product_type_id')";
+    $sql = "INSERT INTO product (sku, name, price, product_type_id) VALUES ('$sku', '$name', '$price', $product_type_id)";
     $db->query($sql);
 
     // Get the inserted product ID
