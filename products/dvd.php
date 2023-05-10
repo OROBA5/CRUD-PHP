@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = isset($_POST['name']) ? $_POST['name'] : '';
     $price = isset($_POST['price']) ? $_POST['price'] : '';
     $product_type_id = isset($_POST['type']) ? (int)$_POST['type'] : 0;
-    $weight = isset($_POST['size']) ? $_POST['size'] : '';
+    $size = isset($_POST['size']) ? $_POST['size'] : '';
 
     // Create new Book instance
     $dvd = new DVD($id, $sku, $name, $price, $product_type_id, $size);

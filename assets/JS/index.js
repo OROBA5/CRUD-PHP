@@ -21,21 +21,22 @@ $(document).ready(function() {
 
 });
 
-// Define the changeActionForm function
 function changeActionForm() {
-  var type = $('#type').val();
-  var action = '';
-  if (type == '3') {
-    action = '../products/book.php';
-  } else if (type == '1') {
-    action = '../products/dvd.php';
-  } else if (type == '2') {
-    action = '../products/furniture.php';
-  }
-  $('#myForm').attr('action', action);
-}
-
-// Handle the onchange event of the select element
-$(document).ready(function() {
-  $('#type').on('change', changeActionForm);
-});
+        var type = $('#type').val();
+        var action = '';
+        
+        if (type == '3') {
+            action = '../products/book.php';
+        } else if (type == '1') {
+            action = '../products/dvd.php';
+        } else if (type == '2') {
+            action = '../products/furniture.php';
+        }
+        
+        $('#myForm').attr('action', action);
+    }
+  
+    // Handle the onchange event of the select element
+    $(document).ready(function() {
+        $('#type').on('change', changeActionForm);
+    });
