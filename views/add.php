@@ -1,5 +1,5 @@
 <?php 
-require_once('../init.php');
+require_once '../database/database.php'; // include the Database class
 ?>
 
 <!DOCTYPE html>

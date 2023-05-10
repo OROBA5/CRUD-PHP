@@ -11,6 +11,11 @@ class Book extends Product {
     }
 }
 
+/* 
+Saving Book through the add product page
+*/
+
+
 // Check if the form has been submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
@@ -42,8 +47,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $price = $db->escape($price);
     $product_type_id = $db->escape($product_type_id);
     $weight = $db->escape($weight);
-
-    var_dump($sku, $name, $price, $product_type_id);
 
     // Insert data into database
     $sql = "INSERT INTO product (sku, name, price, product_type_id) VALUES ('$sku', '$name', '$price', $product_type_id)";
