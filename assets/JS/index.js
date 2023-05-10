@@ -28,9 +28,9 @@ function changeActionForm() {
   if (type == '3') {
     action = '../products/book.php';
   } else if (type == '1') {
-    action = 'add_dvd.php';
+    action = '../products/dvd.php';
   } else if (type == '2') {
-    action = 'add_furniture.php';
+    action = '../products/furniture.php';
   }
   $('#myForm').attr('action', action);
 }
